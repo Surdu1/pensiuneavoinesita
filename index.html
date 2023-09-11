@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Pensiunea Voinesita</title>
+   </head>
+<body>
+    <div class="scroll_mobile">
+        <div class="lendscape">
+            <div class="image_back_land">
+                <img src="./imgini_website/exterior/DSC_4638.jpg">
+            </div>
+            <div class="pn_text">
+                <h1>Pensiunea Voinesita</h1>
+                <p>Locul tau de odihna</p>
+                <a href="#rez"><button type="button">Contacteaza-ne</button></a>
+            </div>
+        </div>
+        <div class="informatii_phone" id="informatii_phone">
+            <h1>Pret: </h1>
+            <p id="camera"></p>
+            <p id="pensiune"></p>
+        </div>
+        <div class="alte">
+            <p>Tour Virtual</p>
+            <iframe src="./i360.html" width="90%" height="60%"></iframe>
+        </div>
+       
+        <div class="contact_mobile" id="rez">
+            <h1>Contact</h1>
+            <p>Rezervarile se fac telefonic la numarul<a href="tel:+40765219422"> 0765219422</a></p>
+            <a href="https://api.whatsapp.com/send?phone=40765219422"><button>Whatsapp</button></a>
+        </div>
+        <div class="galerie_mobile" >
+            <h1>Galerie</h1>
+            <div class="image_container">
+                <div class="buttons">
+                    <button onclick="Back_mob()">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 95 95" fill="none">
+                            <circle cx="47.5" cy="47.5" r="47.5" fill="black"/>
+                            <path d="M55.7485 72.512L30.9998 47.5" stroke="white" stroke-width="6"/>
+                            <line y1="-3" x2="35.1867" y2="-3" transform="matrix(-0.703356 0.710838 -0.703356 -0.710838 55.7485 22.2341)" stroke="white" stroke-width="6"/>
+                            </svg>
+                            
+                    </button>
+                        <button onclick="Next_mob()">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 95 95" fill="none">
+                            <circle cx="47.5" cy="47.5" r="47.5" transform="rotate(-180 47.5 47.5)" fill="black"/>
+                            <path d="M39.2515 22.488L64.0002 47.5" stroke="white" stroke-width="6"/>
+                            <line y1="-3" x2="35.1867" y2="-3" transform="matrix(0.703356 -0.710838 0.703356 0.710838 39.2515 72.7659)" stroke="white" stroke-width="6"/>
+                          </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="scrollable-content">
+    <div class="slidebar">
+        <div class="select">
+            <div class="arow">
+                <button onclick="Inapoi()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23" fill="none">
+                    <path d="M0.944739 9.934C0.356 10.5168 0.351204 11.4666 0.934024 12.0553L10.4316 21.6493C11.0144 22.2381 11.9642 22.2429 12.5529 21.66C13.1417 21.0772 13.1465 20.1275 12.5636 19.5387L4.12132 11.0107L12.6494 2.5684C13.2381 1.98558 13.2429 1.03585 12.6601 0.44711C12.0772 -0.141628 11.1275 -0.146425 10.5388 0.436395L0.944739 9.934ZM24.03 9.61126L2.0076 9.50002L1.99245 12.5L24.0149 12.6112L24.03 9.61126Z" fill="white"/>
+                </svg>
+                 </button>
+            </div>
+            <div class="arow">
+                <button onclick="Inainte()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                <path d="M26.0607 13.0607C26.6464 12.4749 26.6464 11.5251 26.0607 10.9393L16.5147 1.3934C15.9289 0.807611 14.9792 0.807611 14.3934 1.3934C13.8076 1.97919 13.8076 2.92893 14.3934 3.51472L22.8787 12L14.3934 20.4853C13.8076 21.0711 13.8076 22.0208 14.3934 22.6066C14.9792 23.1924 15.9289 23.1924 16.5147 22.6066L26.0607 13.0607ZM0 13.5L25 13.5V10.5L0 10.5V13.5Z" fill="white"/>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <div class="linbar"><p>Pensiunea Voinesita</p><a href="#contact"><button>Contacteaza-ne</button></a></div>
+        <div class="bar_select">
+            <div id = "s1" class="selector sel_hover1 active"></div>
+            <div id = "s2" class="selector sel_hover2"></div>
+            <div id = "s3" class="selector sel_hover3"></div>
+        </div>
+        <div id="s1" class="slider active">
+            <div class="slide">
+                <div class="continut"><div class="paragraf"><p>Aflata la vedere, pe malul drept al raului Voinesita, la poalele muntelui Lotru, inconjurata de paduri dese de brad, molid si fag,la 25km de partia de ski si 42km de Transalpina la 12 km de Cheile Latoritei cu lacurile Petrimanu si Galbenu.</p></div></div>
+                <div class="image-container"><img src="./imgini_website/exterior/DSC_4638.jpg"></div>
+            </div>
+        </div>
+        <div id="s2" class="slider">
+            <div class="slide">
+                <div class="continut"><div class="paragraf"><p>Daca esti in cautare de un loc primitor care are toate facilitatile de care ai nevoie pentru a avea parte de o vacanta de vis atunci Pensiunea Voinesita este ceea ce cauti.</p></div></div>
+                <div class="image-container"><img src="./imgini_website/camera3/DSC_0161.JPG"></div>
+            </div>
+        </div>  
+        <div id="s3" class="slider">
+            <div class="slide">
+                <div class="continut"><div class="paragraf"><p>Inconjurata de un peisaj montan superb si de apa cristalina a raului Voinesita alaturi de aerul curat si sunetul apei curgatoare , Pensiunea Voinesita este locul potivit pentru a te reconecta cu natura si de toate problemele.</p></div></div>
+                <div class="image-container"><img src="./pensiunea-voinesita-voineasa-21-800x533-transformed.png"></div>
+            </div>
+        </div>  
+    </div>
+    <div class="pret reveal">
+        <div class="booking">
+            <p>Sosire:</p>
+            <input type="date" id="date1" onchange="schimaba_data_low()">
+            <p>Plecare:</p>
+            <input type="date" id="date2">
+            <p>Persoane:</p>
+            <input type="number" min="1" style="text-align: center;" value="1" max="12" id="pers" onchange="verificare_persoane()">
+            <button onclick="calculeaza()">Calculeaza</button>
+        </div>
+        <div class="calc_pret" id="pret"></div>
+  </div>
+  
+    <div class="tour reveal">
+        <div class="info_tour">
+            <p><span class="tour_t1">Pensiunea Voinesita</span>/<br><span class="tour_t2">Tour interactiv</span></p>
+            <p>Pensiunea Vionesita Tour Virtual este o calatorie virtulala menita sa prezinte cele 6 camere puse la dispozitie pentru rezervare, holul, living-ul si exteriorul Pensiuni Voinesita. Din respect pentru tine am pus la dispoziti acest tour virtua pentru a te bucura de toata frumusetea Pensiuni Voinesita online din confortul casei tale.</p>
+        </div>
+        <div class="iframe_tour">
+        <iframe src="i360.html"></iframe>
+         </div>
+    </div>
+    <div class="contact_warper reveal" id="contact">
+        <div class="contact">
+            <div class="details">
+              <p> &bull; &nbsp; Adresă: Voineasa, 1.6 km S-V, Jud. Valcea, Romania, Voineșița 247750</p>
+              <p> &bull; &nbsp; Rezervarile se fac numai prin intermediul numarului de telefon: <a href="tel:+40765219422">0765 219 422</a> sau prin intermediul <a href="https://api.whatsapp.com/send?phone=40765219422">Whatapp</a></p>
+              <p> &bull; &nbsp; Metode de plată acceptate: numerar, tichete de vacanță.</p>
+            </div>
+            <div class="iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.0902279639845!2d23.974899676272056!3d45.427682471073354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474daa2f10c8bf35%3A0xb9bb14ca12d3491a!2sPensiunea%20Voinesita!5e0!3m2!1sro!2sro!4v1691701874470!5m2!1sro!2sro"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="image_grow">
+            <img src="./bird.png">
+          </div>
+          </div>
+          <div class="img_back_contact">
+            <img src="./back.jpg">
+          </div>
+        </div>
+    <div class="alte_informati reveal">
+        <div class="facilitati">
+            <p>Alte facilitati: </p><p>Acces la bucătarie, foișor în curte, frigider în unitate, internet wireless, loc de joacă copii,masă de ping-pong, gradină, șemineu, grătar, parcare</p>
+        </div>
+        <div class="mese">
+            <p>Mese:</p>
+            <li>Mic dejun opțional : 25 RON/persoană</li>
+            <li>Prânz opțional: 40 RON/persoană</li>
+            <li>Cină opțională: 30 RON/persoană</li>
+        </div>
+    </div>
+
+    <div class="galerie reveal">
+        <div class="galerie_fundal">
+        </div>
+        <div class="image">
+           <div class="img_selec_galerie">
+            <div class="arow">
+            <button onclick="Back()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 95 95" fill="none">
+                <circle cx="47.5" cy="47.5" r="47.5" fill="black"/>
+                <path d="M55.7485 72.512L30.9998 47.5" stroke="white" stroke-width="6"/>
+                <line y1="-3" x2="35.1867" y2="-3" transform="matrix(-0.703356 0.710838 -0.703356 -0.710838 55.7485 22.2341)" stroke="white" stroke-width="6"/>
+                </svg>
+                
+            </button>
+            </div>
+            <div class="arow">
+            <button onclick="Next()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 95 95" fill="none">
+                <circle cx="47.5" cy="47.5" r="47.5" transform="rotate(-180 47.5 47.5)" fill="black"/>
+                <path d="M39.2515 22.488L64.0002 47.5" stroke="white" stroke-width="6"/>
+                <line y1="-3" x2="35.1867" y2="-3" transform="matrix(0.703356 -0.710838 0.703356 0.710838 39.2515 72.7659)" stroke="white" stroke-width="6"/>
+              </svg>
+            </button>
+            </div>
+           </div>
+        </div>
+        <div  class="galerie_text"> 
+            <h1>Galerie</h1>
+            <p>Daca tour-ul virtual nu te-a convins am pus la dispozitie si o galerie de fotografi cu scopul prezentari mai in detaliu a Pensiuni Voinesita.</p>
+        </div>
+    </div>
+</div>
+  <script type="text/javascript" src="./index.js"></script>
+  <script type="text/javascript" src="./mobile.js"></script>
+</body>
+</html>

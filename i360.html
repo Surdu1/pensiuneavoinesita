@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Custom hot spots</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #panorama {
+        width: 100%px;
+        height: 100vh;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+
+<script>
+viewer = pannellum.viewer('panorama',{
+    "autoLoad": true,
+    "default": {
+        "firstScene": "exterior1",
+        "sceneFadeDuration": 1000
+    },
+
+    "scenes": {
+        "exterior1": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "./images/exterior1.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 5,
+                    "yaw": 115,
+                    "type": "scene",
+                    "sceneId": "hol",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "hol": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 230,
+            "type": "equirectangular",
+            "panorama": "./images/interior_hol.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 5,
+                    "yaw": 115,
+                    "type": "scene",
+                    "sceneId": "scari1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": 5,
+                    "yaw": 305,
+                    "type": "scene",
+                    "sceneId": "exterior1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "scari1": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 200,
+            "type": "equirectangular",
+            "panorama": "./images/hol2.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -30,
+                    "yaw": 210,
+                    "type": "scene",
+                    "sceneId": "hol",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": 10,
+                    "yaw": 180,
+                    "type": "scene",
+                    "sceneId": "hol2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "hol2": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 200,
+            "type": "equirectangular",
+            "panorama": "./images/hol.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -10,
+                    "yaw": 166,
+                    "type": "scene",
+                    "sceneId": "scari1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 110,
+                    "type": "scene",
+                    "sceneId": "cameraalbastra",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 190,
+                    "type": "scene",
+                    "sceneId": "cameraroz",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 310,
+                    "type": "scene",
+                    "sceneId": "cameraverde",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 346,
+                    "type": "scene",
+                    "sceneId": "cameragalbena",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 5,
+                    "type": "scene",
+                    "sceneId": "cameraalbastra2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+            ]
+        },
+            "cameraalbastra2": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "./images/camera3.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": 93,
+                    "type": "scene",
+                    "sceneId": "hol2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "cameraverde": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "./images/camera1.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": 30,
+                    "type": "scene",
+                    "sceneId": "hol2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        "cameraalbastra": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "./images/camera4.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": 247,
+                    "type": "scene",
+                    "sceneId": "hol2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        
+
+        "cameraroz": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "./images/camera5.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": 16,
+                    "type": "scene",
+                    "sceneId": "hol2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+        
+        "cameragalbena": {
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "./images/cameragalbena.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": -60,
+                    "type": "scene",
+                    "sceneId": "hol2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+    }
+});
+</script>
+
+</body>
+</html>
